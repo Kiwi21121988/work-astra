@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welche YouTube-Daten Work Astra liest, wer die Berichte nutzt und wie der Kanalinhaber den Zugriff widerruft.">
+  <title>Datenschutz · Work Astra</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+<header>
+  <nav aria-label="Hauptnavigation">
+    <a class="brand" href="index.html">Work Astra</a>
+    <div class="navlinks">
+      <a href="index.html">Über Work Astra</a>
+      <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+      <a href="nutzung.html">Nutzungsbedingungen</a>
+    </div>
+  </nav>
+</header>
+<main id="inhalt">
+<h1>Datenschutz</h1>
+<p class="intro">Work Astra nutzt die YouTube-Daten des verbundenen Kanals für die redaktionelle Auswertung und die Planung eigener Videos.</p>
+<section><h2>Besuch dieser Infoseite</h2>
+<p>Beim Aufruf über GitHub Pages erhält GitHub die für die Auslieferung der Seite nötigen Verbindungsdaten, darunter die IP-Adresse. Weitere Informationen enthält die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p></section>
+<section><h2>Was Work Astra von YouTube erhält</h2>
+<p>Beim Verbinden erteilt der Kanalinhaber über Google zwei Leseberechtigungen. Der Projektserver prüft die Kanal-ID und nutzt einen von Google ausgestellten Zugang für wiederkehrende Abrufe.</p>
+<ul><li><strong>Kanaldaten und Videoinformationen.</strong> Die YouTube Data API liefert Kanal- und Video-IDs, Titel, Veröffentlichungszeit, Laufzeit, Sichtbarkeit und Angaben zu Livestreams. In den Produzentenbericht gehen aktuell öffentlich sichtbare Videos ein.</li>
+<li><strong>Analysedaten.</strong> Die YouTube Analytics API liefert zusammengefasste Werte pro Video. Dazu gehören Aufrufe, Wiedergabezeit, durchschnittliche Wiedergabedauer und der durchschnittlich angesehene Anteil.</li>
+<li><strong>Thumbnail-Kennzahlen.</strong> Über die YouTube Reporting API ruft Work Astra tägliche Berichte zu Impressionen und Klickrate ab und richtet dafür bei Bedarf einen Berichtsauftrag ein.</li></ul></section>
+<section><h2>Wo die Daten verarbeitet werden</h2>
+<p>Der Projektserver speichert den Zugang für die automatischen Abrufe sowie die Ergebnisse der Auswertung. Über eine verschlüsselte Verbindung erhält der Produktions-PC den Kanalstatus und den Bericht.</p>
+<p>Der Projektchat „Astra Work – Videoproduktion“ kann den Bericht für Schnitt und Thumbnail-Auswahl nutzen. Das Projekt protokolliert außerdem Abrufzeit, Fehlerstatus und die Übergabe des Berichts.</p></section>
+<section><h2>Zugriff widerrufen</h2>
+<p>Der Kanalinhaber kann die Verbindung zu Work Astra in seinem Google-Konto entfernen. Damit endet der Zugriff über diese Freigabe. Bereits gespeicherte Auswertungen und Berichte bleiben auf dem Projektserver und dem Produktions-PC, bis sie dort gelöscht werden.</p>
+<a class="more" href="https://myaccount.google.com/connections">Verbindungen im Google-Konto verwalten <span aria-hidden="true">↗</span></a></section>
+<section><h2>Google-Dienste</h2>
+<p>Für die Verarbeitung durch Google gilt die <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>. Für die Verwendung von Google-Nutzerdaten durch Work Astra gelten die Anforderungen der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> einschließlich der Vorgaben zur begrenzten Nutzung („Limited Use“).</p></section>
+</main>
+<footer>Work Astra · YouTube-Kanalanalyse</footer>
+</body>
+</html>
